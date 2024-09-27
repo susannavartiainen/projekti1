@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-lista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TODO-lista</h1>
+        
+        <!-- TODO-lomake -->
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Lisää tehtävä" required minlength="3">
+            <button type="submit">Lisää</button>
+        </form>
+        
+        <!-- Virheilmoitus -->
+        <p id="error-message"></p>
+        
+        <!-- Suodatusnäkymän napit -->
+        <div class="filter-buttons">
+            <button id="show-all">Näytä kaikki</button>
+            <button id="show-active">Näytä aktiiviset</button>
+            <button id="show-completed">Näytä tehdyt</button>
+        </div>
+        
+        <!-- TODO-lista -->
+        <ul id="todo-list"></ul>
+
+        <!-- Tehtävien laskuri -->
+        <p id="task-counter">Tehtäviä: 0</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
