@@ -50,11 +50,17 @@ button:hover {
 
 #todo-list li {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Tämä pitää napit oikealla */
+    align-items: center; /* Tämä pitää napit keskitettynä pystysuunnassa */
     padding: 10px;
     border: 1px solid #ccc;
     margin: 5px 0;
     border-radius: 5px;
+}
+
+#todo-list li span {
+    flex-grow: 1; /* Tekstikenttä ottaa kaiken ylimääräisen tilan */
+    word-break: break-word; /* Pitkät sanat katkaistaan */
 }
 
 #todo-list li.completed {
@@ -63,6 +69,7 @@ button:hover {
 }
 
 #todo-list li button {
+    margin-left: 10px; /* Lisätään väliä nappien ja tekstin väliin */
     background-color: #e923be;
     color: white;
     border: none;
