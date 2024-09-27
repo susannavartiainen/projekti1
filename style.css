@@ -50,7 +50,6 @@ button:hover {
 
 #todo-list li {
     display: flex;
-    flex-direction: column; /* Tämä asettaa elementit allekkain */
     justify-content: space-between;
     padding: 10px;
     border: 1px solid #ccc;
@@ -64,7 +63,6 @@ button:hover {
 }
 
 #todo-list li button {
-    margin-top: 5px; /* Lisätään hieman väliä nappien väliin */
     background-color: #e923be;
     color: white;
     border: none;
