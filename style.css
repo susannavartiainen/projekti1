@@ -59,7 +59,7 @@ button:hover {
 
 #todo-list li.completed {
     text-decoration: line-through;
-    background-color: #d4edda;
+    background-color: #edc9e8;
 }
 
 #todo-list li button {
