@@ -31,7 +31,7 @@ input[type="text"] {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 5px 10px;
     background-color: #e096c3;
     color: white;
     border: none;
@@ -43,6 +43,11 @@ button:hover {
     background-color: #e068c8;
 }
 
+.buttons-container {
+    display: flex; /* napit vierekkäin */
+    gap: 10px; /* Lisää väliä nappien väliin */
+}
+
 #todo-list {
     list-style-type: none;
     padding: 0;
@@ -50,8 +55,8 @@ button:hover {
 
 #todo-list li {
     display: flex;
-    justify-content: space-between; /* Tämä pitää napit oikealla */
-    align-items: center; /* Tämä pitää napit keskitettynä pystysuunnassa */
+    justify-content: space-between; /* häh */
+    align-items: center; /* Tämä pitää napit keskitettynä pystysuunnassa? */
     padding: 10px;
     border: 1px solid #ccc;
     margin: 5px 0;
@@ -79,6 +84,20 @@ button:hover {
 
 #todo-list li button:hover {
     background-color: #e923be;
+}
+
+.complete-btn {
+    background-color: #28a745; /* Tehty-napin väri */
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc3545; /* Poista-napin väri */
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8; /* hover-efekti */
 }
 
 #error-message {
