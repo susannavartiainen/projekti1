@@ -1,27 +1,27 @@
-// Viittaukset DOM-elementteihin
-const todoForm = document.getElementById('todo-form');
-const todoInput = document.getElementById('todo-input');
-const todoList = document.getElementById('todo-list');
-const errorMessage = document.getElementById('error-message');
-const taskCounter = document.getElementById('task-counter');
-const showAllBtn = document.getElementById('show-all');
+
+const todoForm = document.getElementById('todo-form'); // lomake johon käyttäjä kirjoittaa uuden tehtävän
+const todoInput = document.getElementById('todo-input'); // tekstikenttä johon käyttäjä syöttää tehtävän nimen
+const todoList = document.getElementById('todo-list'); // HTML-elementti, johon kaikki tehtävät renderöidään
+const errorMessage = document.getElementById('error-message'); // elementti jossa näytetään virheilmoituksia jos syöte ei ole kelvollinen
+const taskCounter = document.getElementById('task-counter'); // näyttää aktiivisten tehtävien määrän
+const showAllBtn = document.getElementById('show-all'); 
 const showActiveBtn = document.getElementById('show-active');
-const showCompletedBtn = document.getElementById('show-completed');
+const showCompletedBtn = document.getElementById('show-completed'); // nappeja joilla suodatetaan tehtäviä niiden tilan mukaan (näytä kaikki, näytä aktiiviset, näytä tehdyt)
 
 let todos = JSON.parse(localStorage.getItem('todos')) || [];
 
-// Päivitä tehtävien määrä
+// tämä funktio laskee aktiivisten tehtävien määrän ja päivittää sen näytölle
 function updateTaskCounter() {
     const activeTasks = todos.filter(todo => !todo.completed).length;
     taskCounter.textContent = `Tehtäviä: ${activeTasks}`;
 }
 
-// Tallenna LocalStorageen
+// tämä tallentaa tehtävät localstorageen
 function saveToLocalStorage() {
     localStorage.setItem('todos', JSON.stringify(todos));
 }
 
-// Luo uusi tehtäväelementti
+// Tehtävän luonti ja käsittely
 function createTodoElement(todo) {
     const li = document.createElement('li');
     li.textContent = todo.text;
