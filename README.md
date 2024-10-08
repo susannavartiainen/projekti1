@@ -5,7 +5,7 @@ Susanna Vartiainen
 https://susannavartiainen.github.io/projekti1/
 
 ## Mitä sovellus tekee?
-Ohjelma on yksinkertainen TODO-lista-sovellus, joka mahdollistaa käyttäjien luoda, merkitä tehdyksi ja poistaa tehtäviä. Käyttäjä voi myös suodattaa näkyviin vain aktiivisia tai tehtyjä tehtäviä, ja kaikki tehtävät tallennetaan selaimen localStorage-muistiin, jotta ne säilyvät sivun uudelleenlatauksen jälkeen.
+Tämä ohjelma on TODO-lista-sovellus, jonka avulla käyttäjät voivat hallita tehtäviään. Käyttäjät voivat lisätä uusia tehtäviä, merkitä niitä tehdyiksi tai poistaa niitä. Lisäksi ohjelma tarjoaa suodatusvaihtoehtoja, joiden avulla voidaan tarkastella vain aktiivisia tai suoritetuja tehtäviä.
 
 ## Technologies
 HTML, CSS, JavaScript
