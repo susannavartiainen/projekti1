@@ -9,3 +9,6 @@ Tämä ohjelma on TODO-lista-sovellus, jonka avulla käyttäjät voivat hallita 
 
 ## Technologies
 HTML, CSS, JavaScript
+
+## Lähteet
+
