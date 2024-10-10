@@ -11,6 +11,6 @@ Tämä ohjelma on TODO-lista-sovellus, jonka avulla käyttäjät voivat hallita 
 HTML, CSS, JavaScript
 
 ## Lähteet
-w3school https://www.w3schools.com/howto/howto_js_todolist.asp
-youtube-video, How To Create To-Do List App Using HTML CSS And JavaScript | Task App In JavaScript, https://www.youtube.com/watch?v=G0jO8kUrg-I&ab_channel=GreatStack
+- w3school https://www.w3schools.com/howto/howto_js_todolist.asp
+- youtube-video, How To Create To-Do List App Using HTML CSS And JavaScript | Task App In JavaScript, https://www.youtube.com/watch?v=G0jO8kUrg-I&ab_channel=GreatStack
 
